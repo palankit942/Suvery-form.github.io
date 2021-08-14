@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Avengers Survey Form</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="A Survey of Avengers Movies" />
+  <meta name="keywords" content="avengers, marvel, age of ultron, infinity war" />
+  <meta name="author" content="Ankit Kumar Pal" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich|Bangers" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo2.png" alt="" width="80px" height="80px">
+    </div>
+    <h1 id="title">THE AVENGERS SURVEY</h1>
+  </header>
+
+  <div class="container">
+    <p id="description">Tell us what you like about the Avengers</p>
+
+    <form id="survey-form">
+
+      <div class="form-item-margin" id="about-you">
+      <label id="name-label" class="display-block" for="name"><span class="required">*</span>Name:</label>
+      <input id="name" type="text" name="name" placeholder="Enter your Name" autofocus required>
+      <label id="email-label" class="display-block" for="email"><span class="required">*</span>Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+      <label id="number-label" class="display-block" for="number"><span class="required">*</span>Age:</label>
+      <input id="number" type="number" name="age" min="1" max="100" placeholder="Enter your Age" required>
+    </div>
+
+      <!-- begin radio buttons-->
+      <fieldset class="form-item-margin" id="favorite-movie-options">
+        <legend>What is your Favorite Avengers Movie</legend>
+        <div>
+        <label for="the-avengers">
+          <input id="the-avengers" type="radio" name="favorite-movie" value="The Avengers" >
+          The Avengers
+        </label>
+        <label for="ultron">
+          <input id="ultron" type="radio" name="favorite-movie" value="Avengers: Age Of Ultron" >
+          Avengers: Age Of Ultron
+        </label>
+        <label for="infinity-war">
+          <input id="infinity-war" type="radio" name="favorite-movie" value="Avengers: Infinity War" >
+          Avengers: Infinity War
+        </label>
+      </div>
+      </fieldset>
+      <!-- enalign-items: center;d radio buttons -->
+      <!-- begin checkboxes -->
+      <fieldset class="form-item-margin" id="favorite-avenger-options">
+        <legend>Who are your Favorite Avengers</legend>
+        <div>
+        <label for="black-panther">
+          <input id="black-panther" type="checkbox" name="favorite-avenger" value="Black Panther">
+          Black Panther
+        </label>
+        <label for="iron-man">
+          <input id="iron-man" type="checkbox" name="favorite-avenger" value="Iron Man">
+          Iron Man
+        </label>
+        <label for="hulk">
+          <input id="hulk" type="checkbox" name="favorite-avenger" value="Hulk">
+          Hulk
+        </label>
+        <label for="black-widow">
+          <input id="black-widow" type="checkbox" name="favorite-avenger" value="Black Widow">
+          Black Widow
+        </label>
+        <label for="cap-a">
+          <input id="cap-a" type="checkbox" name="favorite-avenger" value="Captain America">
+          Captain America
+        </label>
+        <label for="dr-strange">
+          <input id="dr-strange" type="checkbox" name="favorite-avenger" value="Dr. Strange">
+          Dr. Strange
+        </label>
+        <label for="spiderman">
+          <input id="spiderman" type="checkbox" name="favorite-avenger" value="Spiderman">
+          Spiderman
+        </label>
+        <label for="thor">
+          <input id="thor" type="checkbox" name="favorite-avenger" value="Thor">
+          Thor
+        </label>
+        <label for="scarlet">
+          <input id="scarlet" type="checkbox" name="favorite-avenger" value="Scarlet Witch">
+          Scarlet Witch
+        </label>
+        <label for="falcon">
+          <input id="falcon" type="checkbox" name="favorite-avenger" value="Falcon">
+          Falcon
+        </label>
+        <label for="vision">
+          <input id="vision" type="checkbox" name="favorite-avenger" value="Vision">
+          Vision
+        </label>
+        <label for="hawkeye">
+          <input id="hawkeye" type="checkbox" name="favorite-avenger" value="Hawkeye">
+          Hawkeye
+        </label>
+        </div>
+      </fieldset>
+      <!-- end checkboxes -->
+
+      <!-- begin dropdown -->
+      <div class="form-item-margin" id="dropdown">
+      <label for="coolest-planet">What's the coolest planet: </label>
+      <select id="coolest-planet" name="coolest-planet">
+        <option value="Earth" selected>Earth</option>
+        <option value="Knowhere">Knowhere</option>
+        <option value="Vomir">Vomir</option>
+        <option value="Zen-Whoberi">Zen-Whoberi</option>
+        <option value="Titan">Titan</option>
+        <option value="Nidavellir">Nidavellir</option>
+      </select>
+      </div>
+      <!-- end dropdown -->
+
+      <div class="form-item-margin" id="textarea">
+      <label class="display-block" for="message">Tell Us More Of The Avengers: </label>
+      <textarea id="message" name="message" placeholder="Comments, questions, concerns..."></textarea>
+      </div>
+
+      <button class="form-item-margin" id="submit" type="submit" name="button">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    
+    <div class="webmaster">
+      <p>&copy 2021 Ankit Kumar Pal</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
